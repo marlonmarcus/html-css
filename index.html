@@ -3,22 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aprendendo JS</title>
+  <title>Ajustes em imagens</title>
   <style>
-    body {
-      text-align: center;
-    }
+    div.quadrado {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+}
 
+div#q1 {
+  background-color: aqua;
+
+}
+
+div#q2 {
+  background-image: linear-gradient(to right, red, orange);
+}
+
+div#q3 {
+  background-image: url('imagens/pattern001.png');
+}
   </style>
 </head>
 <body>
-  <h1>Aprendendo JS</h1>
-    <p id="texto"></p>
-      <p>
-      <script>
-        document.write('Oi escrito com documento.write');
-      </script>
-    </p>
-  <script src="index.js"></script>
+  <div class="quadrado" id="q1">
+
+  </div>
+  <div class="quadrado" id="q2">
+
+  </div>
+  <div class="quadrado" id="q3">
+
+  </div>
 </body>
 </html>
